@@ -1,0 +1,35 @@
+.about {
+  section {
+    padding: 100px 0;
+
+    &.quotation {
+      display: flex;
+      gap: 2.5rem;
+      img {
+        max-width: 20vw;
+      }
+    }
+
+    &:last-child > div {
+      grid-template-columns: 1fr 3fr;
+      border-top: 1px solid #0003;
+      padding: 2.5rem 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 100px 0;
+
+      &.quotation {
+        flex-direction: column;
+
+        img {
+          display: block;
+          margin: auto;
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}

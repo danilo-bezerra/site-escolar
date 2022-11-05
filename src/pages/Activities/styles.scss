@@ -1,0 +1,42 @@
+.about {
+  .activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding: 100px 0;
+    border-bottom: 1px solid #0003;
+    text-align: center;
+
+    &:nth-child(3) {
+      border: none;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 552px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .activity {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      div {
+        max-width: 100%;
+      }
+
+      &:nth-child(2) {
+        div {
+          grid-row: 2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.nav-link {
+  display: block;
+  transition: color 0.25s;
+
+  &:hover {
+    color: #4747d7;
+  }
+
+  &.active {
+    color: #4747d7;
+  }
+}

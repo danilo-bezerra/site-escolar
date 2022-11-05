@@ -1,0 +1,36 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  blockquote {
+    font-size: 52px;
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    margin-bottom: 1rem;
+  }
+
+  path {
+    color: #4747d7;
+  }
+
+  h5 {
+    font-weight: normal;
+    color: #000;
+  }
+
+  @media (max-width: 1200px) {
+    blockquote {
+      font-size: 3vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    blockquote {
+      font-size: 4vw;
+    }
+
+    h5 {
+      font-size: 3vw;
+    }
+  }
+}

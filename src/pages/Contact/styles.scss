@@ -1,0 +1,53 @@
+.contact {
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h6 {
+    margin-bottom: 24px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      button {
+        background-color: #fff;
+        color: #4747d7;
+        max-width: 10rem;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    h1 {
+      text-align: center;
+    }
+
+    h6 {
+      margin-bottom: 32px;
+    }
+
+    .form-container {
+      h6 {
+        text-align: center;
+      }
+
+      form {
+        button {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

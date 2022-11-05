@@ -1,0 +1,40 @@
+.school-numbers-resume {
+  h6 {
+    text-align: center;
+  }
+
+  .count-up-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+
+    .count-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .counter {
+        font-size: 70px;
+        font-weight: bold;
+        color: #4747d7;
+
+        * {
+          color: #4747d7;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .count-up-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+
+      .count-up {
+        .counter {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}

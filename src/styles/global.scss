@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  color: #76767f;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+
+  &.c1-2 {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    &.c1-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  font-weight: normal;
+  @media (max-width: 900px) {
+    font-size: 10vw;
+    line-height: 12vw;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  font-weight: normal;
+  color: #000;
+
+  @media (max-width: 900px) {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+}
+
+h3 {
+  color: #000;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1.25rem;
+
+  @media (max-width: 900px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.875rem;
+
+  @media (max-width: 900px) {
+    font-size: 90%;
+    line-height: 1.5rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+main {
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
