@@ -55,9 +55,7 @@ export function Home() {
         <iframe
           src="https://www.youtube.com/embed/1MILPY1bPVY"
           title="YouTube video player"
-          controls="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
         ></iframe>
         <Quote
           quote="Todos os dias na Escola Tecnológica Bezerra são como uma bênção
